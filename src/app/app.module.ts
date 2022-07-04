@@ -8,6 +8,7 @@ import { NgxScrollTopModule } from 'ngx-scrolltop';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
+import { FooterComponent } from './components/common/footer/footer.component';
 
 const routes: Routes = [];
 
@@ -19,7 +20,7 @@ const routes: Routes = [];
     RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' }),
     NgxScrollTopModule,
   ],
-  declarations: [AppComponent, HelloComponent],
+  declarations: [AppComponent, HelloComponent, FooterComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
